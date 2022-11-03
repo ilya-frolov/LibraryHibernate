@@ -12,9 +12,9 @@ public class Book extends Printable{
         return "Book{" +
                 "id= " + super.getId() +
                 ", title= " + super.getTitle() +
-//                ", author= " + super.getAuthor().getName() +
-//                ", genre= " + super.getGenre().getName() +
-//                ", publisher= " + super.getPublisher().getName() +
+                ", author= " + super.getAuthor().getName() +
+                ", genre= " + super.getGenre().getName() +
+                ", publisher= " + super.getPublisher().getName() +
                 "}";
     }
 
