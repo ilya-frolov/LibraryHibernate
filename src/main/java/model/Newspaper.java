@@ -1,17 +1,15 @@
-package entity;
+package model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Data
 @NoArgsConstructor
-@Entity
+//@Entity
 public class Newspaper extends Printable{
 
     public Newspaper (String title) {
@@ -32,7 +30,7 @@ public class Newspaper extends Printable{
                 ", title=" + super.getTitle() +
                 ", author= " + super.getAuthor().getName() +
                 ", genre= " + super.getGenre().getName() +
-                ", publisher= " + super.getPublisher().getName() +
+//                ", publisher= " + super.getPublisher().getName() +
                 "}";
     }
 }

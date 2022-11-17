@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 1. Config file-->
+    <!--    <bean id="authorRepository" class="repository.impl.AuthorRepositoryImpl">-->
+    <!--        <property name="authors">-->
+    <!--            <set>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="authorService" class="service.impl.AuthorServiceImpl">-->
+    <!--        <property name="authorRepository" ref="authorRepository"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="genreRepository" class="repository.impl.GenreRepositoryImpl">-->
+    <!--        <property name="genres">-->
+    <!--            <set>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="genreService" class="service.impl.GenreServiceImpl">-->
+    <!--        <property name="genreRepository" ref="genreRepository"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="bookRepository" class="repository.impl.BookRepositoryImpl">-->
+    <!--        <property name="books">-->
+    <!--            <set>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="bookService" class="service.impl.BookServiceImpl">-->
+    <!--        <property name="bookRepository" ref="bookRepository"/>-->
+    <!--        <property name="authorService" ref="authorService"/>-->
+    <!--        <property name="genreService" ref="genreService"/>-->
+    <!--    </bean>-->
+
+    <!-- 2. Config file + Annotations @Autowired-->
+<!--    <context:annotation-config/>-->
+<!--    <bean id="authorRepository" class="repository.impl.AuthorRepositoryImpl"/>-->
+<!--    <bean id="authorService" class="service.impl.AuthorServiceImpl"/>-->
+<!--    <bean id="genreRepository" class="repository.impl.GenreRepositoryImpl"/>-->
+<!--    <bean id="genreService" class="service.impl.GenreServiceImpl"/>-->
+<!--    <bean id="bookRepository" class="repository.impl.BookRepositoryImpl"/>-->
+<!--    <bean id="bookService" class="service.impl.BookServiceImpl"/>-->
+
+    <!-- 3. Config file + Annotation @Component (@Repository, @Service)-->
+<!--    <context:component-scan base-package="service.impl"/>-->
+<!--    <context:component-scan base-package="repository.impl"/>-->
+
+    <!-- 4. Without Config file - in Runner AnnotationConfigApplicationContext should be used for context application -->
+</beans>

@@ -1,4 +1,4 @@
-package entity;
+package model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,17 +13,20 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 @Entity
-public class Author {
+public class Publisher {
 
     @Id
     @GeneratedValue
     private int id;
     private String name;
+    private String address;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "author")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "publisher")
     Set<Printable> printable = new HashSet();
 
-    public Author(String name) {
+    public Publisher(String name, String address) {
         this.name = name;
+        this.address = address;
     }
+
 }
