@@ -23,5 +23,6 @@
         <mapping class="entity.Book"/>
         <mapping class="entity.Magazine"/>
         <mapping class="entity.Newspaper"/>
+        <mapping class="entity.Reviewer"/>
     </session-factory>
 </hibernate-configuration>
