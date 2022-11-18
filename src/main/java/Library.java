@@ -1,8 +1,4 @@
 import model.*;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import repository.AuthorRepository;
@@ -17,10 +13,6 @@ import service.GenreService;
 import service.impl.AuthorServiceImpl;
 import service.impl.BookServiceImpl;
 import service.impl.GenreServiceImpl;
-
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Library {
     public static void main(String[] args) {
@@ -65,7 +57,6 @@ public class Library {
 
         System.out.println(bookService.getAll());
     }
-
 
 
 }

@@ -8,9 +8,13 @@ import java.util.Set;
 public interface BookRepository {
 
     void save(Book book);
+
     Book get(Book book);
+
     Set<Book> getAll();
+
     void update(Book book);
+
     void delete(Book book);
 
 //    List<Book> getAll();

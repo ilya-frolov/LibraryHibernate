@@ -27,12 +27,4 @@ public class AuthorServiceImpl implements AuthorService {
     public Author get(Author author) {
         return authorRepository.get(author);
     }
-
-//    public boolean isPresent(Author author) {
-//        if (authorRepository.getByName(author) != null) {
-//            return true;
-//        }
-//        return false;
-//    }
-
 }

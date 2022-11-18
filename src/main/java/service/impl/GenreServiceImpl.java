@@ -29,11 +29,4 @@ public class GenreServiceImpl implements GenreService {
         return genreRepository.get(genre);
     }
 
-//    public boolean isPresent(Genre genre) {
-//        if (genreRepository.getByName(genre) != null) {
-//            return true;
-//        }
-//        return false;
-//    }
-
 }
