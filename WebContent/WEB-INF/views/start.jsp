@@ -7,16 +7,9 @@
 
 <h1>Welcome to the site</h1>
 
-<form action="book" method="post">
-    <input type="text" name="title" placeholder="Enter book title: " required>
-    <input type="text" name="author" placeholder="Enter author name: " required>
-    <td>Genre:</td>
-    <td><select type="text"  name="genre">
-        <option>poem</option>
-        <option>novel</option>
-        <option>science fiction</option>
-        <option>fantastic</option>
-    </select></td>
+<form action="user" method="post">
+    <input type="text" name="name" placeholder="Enter your name: " required>
+    <input type="number" name="age" placeholder="Enter your age: " required>
     <input type="submit" value="SUBMIT">
 </form>
 
